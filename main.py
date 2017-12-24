@@ -1,5 +1,5 @@
 from flask import request, redirect, render_template, session, flash, json
-from app import db
+from app import app, db
 from models import User, Tournament, Player, Round, Round_Player_Table, Course, Hole, Score
 import requests
 from sqlalchemy import desc
