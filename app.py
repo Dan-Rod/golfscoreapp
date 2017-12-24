@@ -2,9 +2,6 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-
-import main
-
 app.config['DEBUG'] = True #displays runtime errors in the browser
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://golfapp:golfapp@localhost:8889/golfapp'
 #mysqldump -h localhost:8889 -u golfapp -pgolfapp golfapp > backup.sql
@@ -12,3 +9,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://cqx01uvb2wce9v5y:kus9g2j2437c83
 app.config['SQLALCHEMY_ECHO'] = True
 
 db = SQLAlchemy(app)
+
+import main
